@@ -1,8 +1,10 @@
-/* General Styles */
+/* Common styles for both login and signup pages */
+
+/* Add a background color or image */
 body {
     font-family: Arial, sans-serif;
     background: url('photo/theme.jpg') no-repeat center center fixed;
-    background-color: #f5f5f5;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,16 +12,9 @@ body {
     margin: 0;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-/* Login and Signup Box */
+/* Ensure the box stands out against the background */
 .login-box, .signup-box {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     display: flex;
     max-width: 900px;
     width: 100%;
@@ -38,20 +33,11 @@ body {
     text-align: center;
 }
 
-.login-left h2, .signup-left h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.login-left p, .signup-left p {
-    color: #555;
-    margin-bottom: 20px;
-}
-
+/* Modify the image inside the login-left and signup-left sections */
 .login-left img, .signup-left img {
-    margin-bottom: 20px;
-    max-width: 100px;
+    max-width: 80%; /* Increase the width to 80% of the container */
+    height: auto;   /* Maintain the aspect ratio */
+    margin: 20px 0; /* Add some vertical margin */
 }
 
 .login-right, .signup-right {
@@ -87,7 +73,7 @@ body {
 .or-divider {
     text-align: center;
     margin: 20px 0;
-    color: #999;
+    color: #788df5;
 }
 
 .social-login {
@@ -102,6 +88,7 @@ body {
     cursor: pointer;
     margin-top: 10px;
 }
+
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
