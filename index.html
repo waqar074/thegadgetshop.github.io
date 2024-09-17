@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gadget Shop - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Section -->
+        <div class="login-box">
+            <div class="login-left">
+                <h2>Welcome Back to 
+                    "The Gadget Shop"</h2>
+                <p>Sign in to explore our latest gadgets and enjoy rental services.</p>
+                <img src="photo/theme.jpg" alt="Gadget Shop Illustration" />
+                <p>Check out our exclusive collection now!</p>
+            </div>
+            <div class="login-right">
+                <h3>Login</h3>
+                <form id="login-form">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" placeholder="Enter your email" required>
+
+                    <label for="login-password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="login-password" placeholder="Enter your password" required>
+                        <span class="toggle-password" onclick="togglePassword()">👁️</span>
+                    </div>
+
+                    <button type="submit">Sign In</button>
+                </form>
+
+                <div class="or-divider">Or sign in with</div>
+                <div class="social-login">
+                    <a href="https://www.facebook.com/login.php/"><img src="photo/facebook.png" alt="Facebook Login" width="40" height="40"></a>
+                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.co.in%2F&ec=GAZAmgQ&hl=en&ifkv=ARpgrqcM4YamhzJEQXy1iLy03mVip0yodlEV7aA4XL4f9w6bY7fKyvXKEl5JexHdsCx-Bgf58_sQ&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1444505435%3A1726561740112032&ddm=0"><img src="photo/google.png" alt="Google Login" width="40" height="40"></a>
+                    <a href="https://appleid.apple.com/auth/token"><img src="photo/apple.png" alt="Apple Login" width="40" height="40"></a>
+                </div>
+                <p>Not a member? <a href="signup.html" class="signup-link">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
